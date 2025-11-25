@@ -9,11 +9,13 @@ function CardPostagem({postagem}: CardPostagensProps) {
         <>
             <div className="flex flex-col border-2">
                 {/* foto e nome do administrador */}
-                <div className="flex justify-between bg-indigo-400">
+                <div className="flex w-full bg-indigo-400 py-2 px-4 items-center gap-4">
                     {/* foto */}
-                    <p>foto</p>
+                    <img src={postagem.usuario?.foto} alt="" className='h-12 rounded-full'/>
                     {/* Nome */}
-                    <p>{postagem.usuario?.nome}</p>
+                    <h3 className='text-lg font-bold text-center uppercase'>
+                        {postagem.usuario?.nome}
+                    </h3>
                 </div>
                 {/* info */}
                 <div>
