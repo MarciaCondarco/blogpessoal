@@ -30,7 +30,7 @@ function Navbar() {
                 <div
                     className="flex text-white gap-4"
                 >
-                    <div><a href="#">Postagem</a></div>
+                    <Link to='/postagens' className='hover:underline'>Postagens</Link>
                     <Link to='/tema' className="hover:underline">Tema</Link>
                     <Link to='/cadastrartema' className='hover:underline'>Cadastrar tema</Link>
                     <div><a href="#">Perfil</a></div>
